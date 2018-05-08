@@ -1,2 +1,8 @@
 
 .DS_Store
+backend/.node_repl_history
+.npm
+.config
+node_modules
+.viminfo
+log
