@@ -21,7 +21,7 @@
 ## 基础架构
 
 本小程序app使用wx.request请求答题系统提供的标准API获取数据
-答题系统属工作室项目，具有通用请求API，后端架构见 [QuestionSystem]("https://github.com/evi0s/QuestionSystem-Rebuild")
+答题系统属工作室项目，具有通用请求API，后端架构见 [QuestionSystem](https://github.com/evi0s/QuestionSystem-Rebuild)
 
 ## 功能实现
 
