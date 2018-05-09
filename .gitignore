@@ -6,3 +6,6 @@ backend/.node_repl_history
 node_modules
 .viminfo
 log
+backend/ngrok
+backend/ngrok.cfg
+.bash_history
