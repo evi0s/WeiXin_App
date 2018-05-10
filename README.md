@@ -42,7 +42,7 @@
 
 ### 主界面
 
-![alt](https://wcxp1314.oss-cn-shenzhen.aliyuncs.com/wx_img/1.png)
+![alt](https://wcxp1314.oss-cn-shenzhen.aliyuncs.com/wx_img/2.png)
 
 主界面将会展示工作室答题系统封面等信息以及一些推送的学习资料，近期新加入的题目等内容，这一部分将由答题系统的管理员负责更新与推送。
 
