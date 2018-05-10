@@ -1,0 +1,43 @@
+{
+  "pages":[
+    "pages/index/index",
+    "pages/logs/logs",
+    "pages/user/user"
+  ],
+  "window":{
+    "backgroundTextStyle":"light",
+    "navigationBarBackgroundColor": "#1b8dec",
+    "navigationBarTitleText": "题题",
+    "navigationBarTextStyle":"white"
+  },
+  "tabBar": {
+    "color": "#a9b7b7",
+    "selectedColor": "#1b8dec",
+    "borderStyle": "white",
+    "list": [{
+      "pagePath": "pages/index/index",
+      "text": "主页",
+      "iconPath": "images/home.png",
+      "selectedIconPath": "images/home_select.png"
+    },
+    {
+      "pagePath": "pages/logs/logs",
+      "text": "题库",
+      "iconPath": "images/question.png",
+      "selectedIconPath": "images/question_select.png"
+    },
+    {
+      "pagePath": "pages/logs/logs",
+      "text": "讨论",
+      "iconPath": "images/message.png",
+      "selectedIconPath": "images/message_select.png"
+    },
+    {
+      "pagePath": "pages/user/user",
+      "text": "我的",
+      "iconPath": "images/user.png",
+      "selectedIconPath": "images/user_select.png"
+    }
+    ]
+  }
+}
