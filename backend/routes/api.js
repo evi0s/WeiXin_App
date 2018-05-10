@@ -119,4 +119,53 @@ router.get('/answer/:id', function(req, res, next) {
   res.jsonp(respoJson);
 });
 
+router.get('/postlist', function(req, res, next) {
+  var respoJson = {
+    "id" : [1,5],
+    "brief" : [
+      {
+        "post_id" : 1,
+        "tag" : "大学物理" ,
+        "title" : "点荷密度为𝜎的无穷大平面周围电势分布，怎么求啊",
+        "time" : 1525921702,
+        "author" : "admin",
+        "reply" : 0
+      },
+      {
+        "post_id" : 2,
+        "tag" : "微积分" ,
+        "title" : "这个定积分怎么求",
+        "time" : 1525921703,
+        "author" : "admin",
+        "reply" : 2
+      },
+      {
+        "post_id" : 3,
+        "tag" : "思修" ,
+        "title" : "马克思主义哲学首要的和基本的观点是啥",
+        "time" : 1525921704,
+        "author" : "admin",
+        "reply" : 10
+      },
+      {
+        "post_id" : 4,
+        "tag" : "算法" ,
+        "title" : "求解释KMP算法",
+        "time" : 1525921705,
+        "author" : "ruoji",
+        "reply" : 100
+      },
+      {
+        "post_id" : 5,
+        "tag" : "数据结构" ,
+        "title" : "线段树求救",
+        "time" : 1525921706,
+        "author" : "ruoji",
+        "reply" : 30
+      },
+    ]
+  };
+  res.jsonp(respoJson);
+});
+
 module.exports = router;
