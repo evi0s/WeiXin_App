@@ -42,13 +42,13 @@
 
 ### 主界面
 
-![alt](https://wcxp1314.oss-cn-shenzhen.aliyuncs.com/wx_img/IMG_1973.PNG)
+![alt](/screenshot/1.PNG)
 
 主界面将会展示工作室答题系统封面等信息以及一些推送的学习资料，近期新加入的题目等内容，这一部分将由答题系统的管理员负责更新与推送。
 
 ### 题目列表
 
-![alt](https://wcxp1314.oss-cn-shenzhen.aliyuncs.com/wx_img/IMG_1974.PNG)
+![alt](/screenshot/2.PNG)
 
 题目列表将会列出答题系统中的所有题目，每页将会显示十个到二十个题目标题，用户可根据需求，通过点击某一题目标题来查看具体的题目内容。对于每一道题目，用户可以提交自己的答案、查看题目的题解、发布题目相关的讨论内容等等操作。
 
@@ -56,12 +56,12 @@
 
 ### 讨论区
 
-![alt](https://wcxp1314.oss-cn-shenzhen.aliyuncs.com/wx_img/IMG_1975.PNG)
+![alt](/screenshot/3.PNG)
 
 类似于题目讨论，用户可在讨论区发布讨论内容，其他用户可在讨论区对应的标题下进行回复，讨论发布者在收到回复信息后将会收到系统的提示，以此达到多人线上讨论的效果。同样的，管理员拥有管理讨论区的权限，对用户发布的内容保留审核，删除，修改的权限。
 
 ### 我的
 
-![alt](https://wcxp1314.oss-cn-shenzhen.aliyuncs.com/wx_img/IMG_1976.PNG)
+![alt](/screenshot/4.PNG)
 
 用户个人界面将会显示用户个人信息，包括用户的头像和用户名等。用户可在该界面修改用户详细信息，对进行一些设置操作，或是注销、切换账号。
