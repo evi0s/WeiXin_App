@@ -2,7 +2,10 @@
   "pages":[
     "pages/index/index",
     "pages/logs/logs",
-    "pages/user/user"
+    "pages/user/user",
+    "pages/post/post",
+    "pages/question/question",
+    "pages/question2/question"
   ],
   "window":{
     "backgroundTextStyle":"light",
@@ -21,13 +24,13 @@
       "selectedIconPath": "images/home_select.png"
     },
     {
-      "pagePath": "pages/logs/logs",
+      "pagePath": "pages/question2/question",
       "text": "题库",
       "iconPath": "images/question.png",
       "selectedIconPath": "images/question_select.png"
     },
     {
-      "pagePath": "pages/logs/logs",
+      "pagePath": "pages/post/post",
       "text": "讨论",
       "iconPath": "images/message.png",
       "selectedIconPath": "images/message_select.png"

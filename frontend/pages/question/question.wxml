@@ -1,21 +1,10 @@
-<!--index.wxml-->
+<!--question.wxml-->
 <view class='page'>
   <view class='page-body'>
 
   <!--search-->
   <view>
     <include src="../../wxSearchView/wxSearchView.wxml" />
-  </view>
-
-  <!--swiper-->
-  <view class="page-section page-section-spacing swiper">
-    <swiper indicator-dots="{{indicatorDots}}" autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}">
-      <block wx:for="{{background}}" wx:key="item">
-        <swiper-item class='swiper-item'>
-          <image src="{{item.img}}" style='width:100%;height:100%;'></image>
-        </swiper-item>
-      </block>
-    </swiper>
   </view>
 
   <!--nav-->
@@ -30,20 +19,20 @@
     </view>
   </view>
 
-  <!--articles-->
+  <!--questions-->
   <view>
     <view class="articles-item-container">
     <block wx:for="{{articles}}" wx:key="item">
       <navigator url="../detail/detail?id={{item.id}}">
         <view class="articles-item" >
-          <view class="articles-item-left">
-            <image src="{{item.img}}" class="articles-image"/>
-          </view>
+        <view class="articles-item-image">
+          <text class="articles-item-id">{{item.id}}</text>
+        </view>
           <view class="articles-item-right">
             <text class="articles-item-title">{{item.title}}</text>
             <view style='margin-top:25px;margin-left:10px;'>
-              <text class="articles-item-other-left">{{item.author}}</text>
-              <text class="articles-item-other-right">{{item.time}}</text>
+              <text class="articles-item-other-left">{{item.tag[0]}}</text>
+              <text class="articles-item-other-right">{{item.author}}</text>
             </view>
           </view>
         </view>

@@ -1,0 +1,58 @@
+/**question.wxss**/
+@import "../../wxSearchView/wxSearchView.wxss";
+
+.container{
+  height: 100rpx;
+  display: flex;
+}
+
+/*nav*/
+.nav{
+ display:flex;
+ flex-wrap:wrap;
+ justify-content:center;
+}
+.nav-item{
+  margin: 30rpx 50rpx 10rpx;
+  width:80rpx;
+}
+.nav-item image{
+  width:80rpx;
+  height: 80rpx;
+  border-radius:50%;
+}
+.nav-item text{
+  width:80rpx;
+  font-size: 25rpx;
+  color:#000;
+  display: inline-block;
+  text-align: center;
+}
+
+/*list*/
+.list {
+  background: #fff;
+  margin-top:5rpx;
+}
+.list .item{
+  padding:20px 15px;
+  font-size: 14px;
+  color:#333;
+  position: relative;
+  border-bottom: 1px solid #f3f3f3;
+}
+.list .item::last-child{
+  border:none;
+}
+.list .item image {
+  width:18px;
+  height: 18px;
+  display: inline-block;
+  vertical-align:middle;
+  margin-right:8px;
+}
+.list .item .jump{
+  position: absolute;
+  right:20px;
+  color:#999;
+}

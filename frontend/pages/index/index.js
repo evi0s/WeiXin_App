@@ -1,49 +1,106 @@
 //index.js
 //获取应用实例
 const app = getApp()
+var WxSearch = require('../../wxSearchView/wxSearchView.js');
 
 Page({
   data: {
-    motto: 'Hello World',
-    userInfo: {},
-    hasUserInfo: false,
-    canIUse: wx.canIUse('button.open-type.getUserInfo'),
-    temp: ''
+    background: [],
+    swiper : [],
+    nav : [],
+    articles : [],
+    indicatorDots: true,
+    autoplay: true,
+    interval: 5000,
+    duration: 1000
   },
   //事件处理函数
   bindViewTap: function() {
-    wx.navigateTo({
-      url: '../logs/logs'
-    })
+    
   },
   onLoad: function () {
-    var that = this
-    if (app.globalData.userInfo) {
-      this.setData({
-        userInfo: app.globalData.userInfo,
-        hasUserInfo: true
-      })
-    } else if (this.data.canIUse){
-      // 由于 getUserInfo 是网络请求，可能会在 Page.onLoad 之后才返回
-      // 所以此处加入 callback 以防止这种情况
-      app.userInfoReadyCallback = res => {
-        this.setData({
-          userInfo: res.userInfo,
-          hasUserInfo: true
-        })
-      }
-    } else {
-      // 在没有 open-type=getUserInfo 版本的兼容处理
-      wx.getUserInfo({
-        success: res => {
-          app.globalData.userInfo = res.userInfo
-          this.setData({
-            userInfo: res.userInfo,
-            hasUserInfo: true
-          })
+    this.setData({
+      nav : [
+        {
+          img: "../../images/index/nav/chinese.png",
+          title: "语文",
+          navigator: "../other/other"
+        },
+        {
+          img: "../../images/index/nav/math.png",
+          title: "数学",
+          navigator: "../other/other"
+        },
+        {
+          img: "../../images/index/nav/physics.png",
+          title: "物理",
+          navigator: "../other/other"
+        },
+        {
+          img: "../../images/index/nav/computer.png",
+          title: "计算机",
+          navigator: "../other/other"
         }
-      })
-    }
+      ],
+      background : [
+        {
+          img: "../../images/index/swiper/1.jpg",
+        },
+        {
+          img: "../../images/index/swiper/2.jpg",
+        },
+        {
+          img: "../../images/index/swiper/3.jpg",
+        }
+      ],
+      articles : [
+        {
+          img: "../../images/index/articles/4.jpg",
+          title: "四六级/托福雅思 实用资料",
+          author: "wjj",
+          time: "2018年5月10日"
+        },
+        {
+          img : "../../images/index/articles/1.jpg",
+          title : "Docker入门",
+          author: "admin",
+          time : "2018年5月10日"
+        },
+        {
+          img: "../../images/index/articles/2.jpg",
+          title: "区块链入门",
+          author: "admin",
+          time: "2018年5月10日"
+        },
+        {
+          img: "../../images/index/articles/3.jpg",
+          title: "微积分常用公式整理",
+          author: "hwfhc",
+          time: "2018年5月10日"
+        },
+        {
+          img: "../../images/index/articles/5.jpg",
+          title: "微积分常用公式整理",
+          author: "hwfhc",
+          time: "2018年5月10日"
+        },
+        {
+          img: "../../images/index/articles/6.jpg",
+          title: "微积分常用公式整理",
+          author: "hwfhc",
+          time: "2018年5月10日"
+        },
+        {
+          img: "../../images/index/articles/7.jpg",
+          title: "微积分常用公式整理",
+          author: "hwfhc",
+          time: "2018年5月10日"
+        }
+      ]
+
+    })
+    
+    
     /*wx.request({
       url: 'https://wcxp1314.lrworkshop.xin/api/get_hum_and_temp',
       data: {},
@@ -57,12 +114,11 @@ Page({
       }
     })*/
   },
-  getUserInfo: function(e) {
-    console.log(e)
-    app.globalData.userInfo = e.detail.userInfo
-    this.setData({
-      userInfo: e.detail.userInfo,
-      hasUserInfo: true
-    })
+  
+  /**
+   * 用户点击右上角分享
+   */
+  onShareAppMessage: function () {
+
   }
 })

@@ -8,7 +8,7 @@ Page({
 		this.getUserInfo()
 	},
 	onShow() {
-		this.getStorageInfo()
+
 	},
 	navigateTo(e) {
 		const index = e.currentTarget.dataset.index
@@ -42,18 +42,9 @@ Page({
 			})
 		})
     },
-    getStorageInfo() {
-    	App.WxService.getStorageInfo()
-    	.then(data => {
-    		console.log(data)
-    		this.setData({
-    			'settings[0].path': `${data.currentSize}KB`
-    		})
-    	})
-    },
     bindtap(e) {
     	const index = e.currentTarget.dataset.index
-		const path = e.currentTarget.dataset.path
+		  const path = e.currentTarget.dataset.path
 
 		switch(index) {
 			case 0:
@@ -67,4 +58,11 @@ Page({
 				App.WxService.navigateTo(path)
 		}
     },
+
+    /**
+   * 用户点击右上角分享
+   */
+    onShareAppMessage: function () {
+
+    }
 })

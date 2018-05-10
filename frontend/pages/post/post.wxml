@@ -1,0 +1,27 @@
+<!--pages/post/post.wxml-->
+<view class='page'>
+  <view class='page-body'>
+
+  <!--search-->
+  <view>
+    <include src="../../wxSearchView/wxSearchView.wxml" />
+  </view>
+
+  <!--posts-->
+  <view class="list">
+  <block wx:for="{{posts}}" wx:key="item">
+    <view class="item">
+        <text>{{item.id}}</text>
+        <text style='padding-left: 10rpx;'>{{item.title}}</text>
+           <text class="jump">〉</text>
+        <view style='width:90%'>
+           <text class='left'>{{item.author}}</text>
+           <text class='right'>回复数：{{item.reply}}</text>
+        </view>
+       
+    </view>
+  </block>
+  </view>
+
+  </view>
+</view>

@@ -10,15 +10,15 @@
 </view>
 
 <view class="list">
-    <view class="item" bindtap="order">
+    <view class="item" bindtap="change">
         <image src="../../images/change.png"/>修改信息
         <text class="jump">〉</text>
     </view>
-    <view class="item" bindtap="order">
+    <view class="item" bindtap="settings">
         <image src="../../images/settings.png"/>设置
         <text class="jump">〉</text>
     </view>
-    <view class="item" bindtap="address">
+    <view class="item" bindtap="logout">
         <image src="../../images/logout.png"/>注销
         <text class="jump">〉</text>
     </view>

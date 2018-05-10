@@ -1,33 +1,9 @@
-/**index.wxss**/
+/**question.wxss**/
 @import "../../wxSearchView/wxSearchView.wxss";
 
 .container{
   height: 100rpx;
   display: flex;
-}
-
-/*swiper*/
-
-page {
-  background-color: #fff;
-  height: 100%;
-  font-size: 32rpx;
-  line-height: 1.6;
-}
-.page-body{
-  padding-top: 0rpx;
-}
-.page-section{
-  width: 100%;
-  margin-bottom: 10rpx;
-}
-.page-section-spacing{
-  box-sizing: border-box;
-  padding: 0 10rpx;
-}
-.swiper-item{
-  display: block;
-  height: 150px;
 }
 
 /*nav*/
@@ -68,8 +44,8 @@ page {
   padding-top: 10px;
   padding-right: 10px;
   padding-bottom: 10px;
-  margin-left: 10px;
-  margin-right: 10px;
+  margin-left: 5px;
+  margin-right: 5px;
   margin-top: 10px;
   background-color: #f5f5f9;
   border: 1px solid #eaeaea;
@@ -85,13 +61,16 @@ page {
   height: 100%;
 }
 .articles-image{
-  width: 80px;
-  height: 80px;
-  border-radius: 5px;
+  width: 20px;
+  height: 100%;
+  font-size: 4px;
 }
 .articles-item-title{
   margin-left:10px;
   font-size: 16px;
+}
+.articles-item-other-id{
+  font-size: 8px;
 }
 .articles-item-other-left{
   font-size: 14px;

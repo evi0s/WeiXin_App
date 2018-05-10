@@ -1,0 +1,35 @@
+<!--question.wxml-->
+<view class='page'>
+  <view class='page-body'>
+
+  <!--search-->
+  <view>
+    <include src="../../wxSearchView/wxSearchView.wxml" />
+  </view>
+
+  <!--nav-->
+  <view style='background-color:#f5f5f9'>
+    <view class="nav flex">
+      <block wx:for="{{nav}}" wx:key="item">
+        <navigator url="{{item.navigator}}" class="nav-item">
+          <image src="{{item.img}}"></image>
+          <text>{{item.title}}</text>
+        </navigator>
+      </block>
+    </view>
+  </view>
+
+  <!--questions-->
+  <view class="list">
+  <block wx:for="{{questions}}" wx:key="item">
+    <view class="item">
+        <text>{{item.id}}</text>
+        <text style='padding-left: 10rpx;'>{{item.title}}</text>
+        <text class="jump">〉</text>
+    </view>
+  </block>
+  </view>
+
+
+  </view>
+</view>
