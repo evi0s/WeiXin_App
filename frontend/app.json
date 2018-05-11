@@ -1,6 +1,8 @@
 {
   "pages":[
+    "pages/index2/index",
     "pages/index/index",
+    
     "pages/logs/logs",
     "pages/user/user",
     "pages/post/post",
@@ -18,7 +20,7 @@
     "selectedColor": "#1b8dec",
     "borderStyle": "white",
     "list": [{
-      "pagePath": "pages/index/index",
+      "pagePath": "pages/index2/index",
       "text": "主页",
       "iconPath": "images/home.png",
       "selectedIconPath": "images/home_select.png"
