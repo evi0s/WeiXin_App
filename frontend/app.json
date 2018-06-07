@@ -1,10 +1,12 @@
 {
   "pages":[
     "pages/index2/index",
+    "pages/index2/article/detail",
     "pages/index/index",
     
     "pages/logs/logs",
     "pages/user/user",
+    "pages/user/user/logs",
     "pages/post/post",
     "pages/question/question",
     "pages/question2/question"

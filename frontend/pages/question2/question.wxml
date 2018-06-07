@@ -3,8 +3,21 @@
   <view class='page-body'>
 
   <!--search-->
-  <view>
-    <include src="../../wxSearchView/wxSearchView.wxml" />
+  <view class="weui-search-bar">
+   <view class="weui-search-bar__form">
+    <view class="weui-search-bar__box">
+      <icon class="weui-icon-search_in-box" type="search" size="14"></icon>
+        <input type="text" class="weui-search-bar__input" placeholder="请输入查询内容" value="{{wxSearchData.value}}" bindinput="wxSearchInput" bindconfirm="wxSearchConfirm" />
+        <view class="weui-icon-clear" wx:if="{{wxSearchData.value.length > 0}}" bindtap="wxSearchClear">
+        <icon type="clear" size="14"></icon>
+        </view>
+      </view>
+    </view>
+
+    <view class="weui-search-bar__cancel-btn" bindtap="wxSearchConfirm">
+         <text wx:if="{{wxSearchData.value.length>0}}" data-key='search'>搜索</text>
+         <text wx:else data-key='back'>返回</text>
+     </view>
   </view>
 
   <!--nav-->
@@ -23,9 +36,11 @@
   <view class="list">
   <block wx:for="{{questions}}" wx:key="item">
     <view class="item">
+    <navigator url="./article/detail?id={{item.id}}">
         <text>{{item.id}}</text>
         <text style='padding-left: 10rpx;'>{{item.title}}</text>
         <text class="jump">〉</text>
+    </navigator>
     </view>
   </block>
   </view>

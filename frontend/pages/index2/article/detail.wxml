@@ -1,0 +1,6 @@
+<!--pages/index2/article/detail.wxml-->
+<text>pages/index2/article/detail.wxml</text>
+<text>{{id}}</text>
+<text>{{author}}</text>
+<text>{{time}}</text>
+<text>{{content}}</text>

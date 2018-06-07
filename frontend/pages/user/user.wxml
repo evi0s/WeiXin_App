@@ -10,7 +10,7 @@
 </view>
 
 <view class="list">
-    <view class="item" bindtap="change">
+    <view class="item" bindtap="logs">
         <image src="../../images/change.png"/>修改信息
         <text class="jump">〉</text>
     </view>

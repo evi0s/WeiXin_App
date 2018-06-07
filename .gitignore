@@ -9,3 +9,4 @@ log
 backend/ngrok
 backend/ngrok.cfg
 .bash_history
+*.icloud
